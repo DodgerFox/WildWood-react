@@ -2,7 +2,10 @@ import React from 'react';
 import Post from './Post';
 
 export default function Timeline ({articles}) {
-    return (
+  const articleList = articles.map(article => 
+    <Post key = {article.id} article = {article} />
+  )
+  return (
       <section class="timeline">
         <div class="search">
           <div class="search-input">
@@ -10,8 +13,9 @@ export default function Timeline ({articles}) {
             <input type="search" placeholder="Кто ищет - тот найдет" />
           </div>
         </div>
+        
         <div class="timeline-body">
-          <Post />
+          {articleList}
         </div>
       </section>
     );
