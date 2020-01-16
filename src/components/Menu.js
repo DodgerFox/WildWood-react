@@ -1,5 +1,6 @@
-import React from 'react';
+import React from 'react'
 import User from '../assets/images/user.jpg'
+import {NavLink} from 'react-router-dom'
 
 class Menu extends React.Component {
   render() {
@@ -16,16 +17,20 @@ class Menu extends React.Component {
           <div class="nav__line"></div>
           <ul class="nav-list">
             <li class="nav-item">
-              <img src="assets/images/icon_fire.svg" />
-              <div class="nav-item__desc">
-                <p>Лента</p>
-              </div>
+              <NavLink exact to='/'>
+                <img src="assets/images/icon_fire.svg" />
+                <div class="nav-item__desc">
+                  <p>Лента</p>
+                </div>
+              </NavLink>
             </li>
             <li class="nav-item">
-              <img src="assets/images/icon_map.svg" />
-              <div class="nav-item__desc">
-                <p>Катания</p>
-              </div>
+              <NavLink to='/map'>
+                <img src="assets/images/icon_map.svg" />
+                <div class="nav-item__desc">
+                  <p>Катания</p>
+                </div>
+              </NavLink>
             </li>
             <li class="nav-item">
               <img src="assets/images/icon_boot.svg" />

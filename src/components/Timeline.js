@@ -1,7 +1,7 @@
 import React from 'react';
 import Post from './Post';
 
-export default function Timeline ({articles}) {
+export default function Timeline ({articles, users}) {
   const articleList = articles.map(article => 
     <Post key = {article.id} article = {article} />
   )
