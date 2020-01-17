@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import User from '../assets/images/user.jpg'
 
 class Post extends React.Component {
   render() {
@@ -28,7 +29,7 @@ class Post extends React.Component {
             </div>
             <div class="info-wrap">
               {hot}
-              <a class="info__user" href="#"></a>
+              <a class="info__user" href="#" style={{ backgroundImage: `url(${User})` }}></a>
             </div>
           </div>
       </article>

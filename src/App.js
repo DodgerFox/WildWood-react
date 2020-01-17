@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Forum from './views/Forum';
 import Map from './views/Map';
+import Wrong from './views/Wrong';
 
 
 class App extends React.Component {
@@ -21,6 +22,7 @@ class App extends React.Component {
           <Switch>
             <Route path={"/"} exact component={Forum} />
             <Route path={"/map"} component={Map} />
+            <Route path={"*"} component={Wrong} />
           </Switch>
       </BrowserRouter>
     );
